@@ -115,4 +115,10 @@ public class PersonAttributeTest extends BaseContextSensitiveTest {
 		Assert.assertTrue(pa.isVoided());
 	}
 	
+	@Test
+	public void getID_shouldReturnPatientID() throws Exception {
+		PersonAttribute pa = new PersonAttribute(2);
+
+		Assert.assertEquals(2, pa.getID());
+	}
 }
